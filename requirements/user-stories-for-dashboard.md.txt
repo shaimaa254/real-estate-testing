@@ -1,0 +1,125 @@
+# Dashboard User Stories
+ 
+## 1-Login
+### User Story
+As a developer,
+ I want to *log in dahboard*,
+  So that I can *manage my real-estate company*.
+
+### Acceptance Criteria
+**Given** the developer already register in Aqary website. 
+**When** developer enter valid email and passwoprd.
+**Then** the system should be accept,
+         and save the developer in dataBase,
+         and navigate developer to dashboard page.
+
+## 2-Dashboard
+### User Story
+As a developer,
+ I want to *update reports for modules*,
+  So that I can *keep track of the changes that occur in this modules continuously.*.
+
+### Acceptance Criteria
+**Given** the developer already logi in Aqary website.
+**When** developer open dashboard page.
+**Then** the system should be display total number for customers, projects, and available units, 
+         and display updated data for this modules.
+
+## 3-Customers Management
+### User Story
+As a developer,
+ I want to *be able to create, edit and delete customers*, 
+  So that I can *manage my clients' data and track their activity and communicate with them*.
+
+### Acceptance Criteria
+**Given** the developer add client`s data.
+**When** developer enter email and password for this client and other details. 
+**Then** the system should be save data and display the key details for this customer in customers list,
+         this change in total number for customers display on dashboard,
+         and this customer should be able to log in aqary application, 
+         and follow up all available properties and units in company,
+         and be able to reservates units, or communicates with  the company.  
+
+## 4-Properties Management
+### User Story
+As a developer,
+ I want to *be able to create,edit, or delete properties*,
+  So that I can *view my properties with their details on application, and update their data continuously*.
+
+### Acceptance Criteria
+**Given** the developer create new properties.
+**When** developer enter location details, description to property, high quality image.
+**Then** the system should be save this data in database,
+         this change in total number for properties display on dashboard,
+         and display key details for this property in properties list,
+         and view this property with it data on aqary application.   
+
+## 5-Units Management
+### User Story
+As a developer,
+ I want to *be able to create,edit, or delete units*,
+  So that I can *view my units with their details on application,and make them available for booking*.
+
+### Acceptance Criteria
+**Given** the developer create new unit.
+**When** developer enter location details,price, and high quality image for this unit.
+**Then** the system should be save the unit data in database,
+         and display key details in units list,
+         and view this unit on the application with possibility of reserving it using the points system.
+         and this change in total number for units display on dashboard,   
+
+
+## 6-Units Reservations Requests
+### User Story
+As a developer, 
+ I want to *have menu of unit reservation requests*, 
+  So that I can *receives and review them to approve or even reject these requests*.
+
+### Acceptance Criteria
+**Given** the customer send reservation request.
+**When** the developer receives this request to reviews it and approve or reject.
+**Then** if developer approve the request, the system should be display this unit in menu units reservations,
+         and The system modifies the unit data and adds the name of the customer who booked it.
+         and This unit will be removed from the list of units displayed on the application,
+         and transferred to the customer’s real properties wallet.
+         -if the developer rejects the request, the unit will remain in the unit list as is,
+         and the points will be transferred back to the customer’s balance. 
+
+
+## 7-Units Reservations
+### User Story
+As a developer, 
+ I want to *I want to have a menu of reserved units,
+  so that I can *track the payment plans of each client*.
+
+### Acceptance Criteria
+**Given** the developer accepted the reservation request.
+**When** developer edit this unit to create installment plan.
+**Then** the system should be save the new data in database,
+         and this change display in dashboard.
+         and the application display the installment plan in customer`s properties wallet.
+          
+
+## 8-Company Profile
+### User Story
+As a developer, 
+  I want to *be able to access to my company profile*, 
+    So that I can *update my information*.
+
+### Acceptance Criteria
+**Given** the developer log in website successfully. 
+**When** developer take action like change password. 
+**Then** the system should be save new data and updated the profile.
+
+## 9-Notifications Module
+### User Story
+As a developer, 
+I want to *able to sand notifications for my clients*, 
+   So that I can *inform them of an increase in their points balance, or remind them of the installment payment dates, or notify them of late installments*.
+
+### Acceptance Criteria
+**Given** the developer want to notify customer something.
+**When** developer write the notification and select the customer from customers list.
+**Then** the system send the notification from website,
+         and the application receives and display it on the customer's account. 
+
