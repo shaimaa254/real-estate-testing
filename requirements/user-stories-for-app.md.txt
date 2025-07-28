@@ -1,66 +1,96 @@
 # Mobile App User Stories
 
-## Login
+## 1-Login
+
 ### User Story
-As a customer, I want to login, so that I can see the properties displayed within the application.
+As a customer, 
+ I want to login,
+  so that I can see the properties displayed within the application.
+
 ### Acceptance Criteria
-Given the customer is already register on the application.
-When the customer enter valid email and password.
-Then the system should be accept login and redirect the customer to home page.
+**Given** the customer is already register on the application.
+**When** the customer enter valid email and password.
+**Then** the system should be accept login and redirect the customer to home page.
 
 
-## Search
+## 2-Search
+
 ### User Story
-As a customer, I want to *search for properties and units using keywords andor filtering the results*, so that I can *easily access what I want*.
-### Acceptance Criteria
-Given the customer must have logged in succefully, and move to the home page.
-When open search bar from home page, and enter keywords andor select from filter options. 
-Then the system should be display the search result occording to the customer`s inputs.
+As a customer,
+ I want to *search for properties and units using keywords andor filtering the results*,
+   so that I can *easily access what I want*.
 
-## Browsing Properties
+### Acceptance Criteria
+**Given** the customer must have logged in succefully, and move to the home page.
+**When** open search bar from home page, and enter keywords andor select from filter options. 
+**Then** the system should be display the search result occording to the customer`s inputs.
+
+
+## 3-Browsing Properties
+
 ### User Story
-As a customer, I want to browse all available properties, so that I can see descriptions and details for each .
+As a customer,
+ I want to browse all available properties,
+  so that I can see descriptions and details for each .
 ### Acceptance Criteria
-Given the customer must have logged in succefully, and move to the home page.
-When the customer open properties view list from home page.
-Then the system should be display all properties wih basics details like image, location, owner company,and when customer click on each the system should be navigate to this property page with all property details and related units. 
+**Given** the customer must have logged in succefully, and move to the home page.
+**When** the customer open properties view list from home page.
+**Then** the system should be display all properties wih basics details like image, location, owner company,and when customer click on each the system should be navigate to this property page with all property details and related units. 
 
-## Browsing Units
+## 4-Browsing Units
 ### User Story
-As a customer, I want to browse all available units, so that I can see descriptions and details for each .
-### Acceptance Criteria
-Given the customer must have logged in succefully, and move to the home page.
-When the customer open units view list from home page.
-Then the system should be display all available units wih basics details like image,price, location, property name, owner company,and when customer click on each the system should be navigate to this property page with all unit details. 
+As a customer,
+  I want to browse all available units,
+   so that I can see descriptions and details for each .
 
-## Points Wallet
+### Acceptance Criteria
+**Given** the customer must have logged in succefully, and move to the home page.
+**When** the customer open units view list from home page.
+**Then** the system should be display all available units wih basics details like image,price, location, property name, owner company,and when customer click on each the system should be navigate to this property page with all unit details. 
+
+
+## 5-Points Wallet
+
 ### User Story
-As a customer, I want to have a wallet with my points balance, so that I can easily send a reservation request to the owner real estate company .
-### Acceptance Criteria
-Given the customer click book unit from unit details page, and navigate to unit reservation request page.
-When the customer enter unit data and his point.
-Then the system will send the reservation request to the owner company, If the customer has enough points.If approved, a notification is sent to the customer.
+As a customer, 
+  I want to have a wallet with my points balance, 
+    so that I can easily send a reservation request to the owner real estate company .
 
-## Properties Wallet
+### Acceptance Criteria
+**Given** the customer click book unit from unit details page, and navigate to unit reservation request page.
+**When** the customer enter unit data and his point.
+**Then** the system will send the reservation request to the owner company, If the customer has enough points.If approved, a notification is sent to the customer.
+
+## 6-Properties Wallet
+
 ### User Story
-As a customer, I want to have a wallet for my reserved units, so that I can follow up on the payment plans for each .
-### Acceptance Criteria
-Given the customer has already reserved one or more units and obtained approval from the owner.
-Whenthe customer oprn properties wallet and select one of reserved unit.
-Then the system should be display relevant details lik; plan installment, installments paid and remaining installments.
+As a customer,
+ I want to have a wallet for my reserved units,
+  so that I can follow up on the payment plans for each .
 
-## Profile
+### Acceptance Criteria
+**Given** the customer has already reserved one or more units and obtained approval from the owner.
+**When** the customer oprn properties wallet and select one of reserved unit.
+**Then** the system should be display relevant details lik; plan installment, installments paid and remaining installments.
+
+
+## 7-Profile
+
 ### User Story
 As a customer, I want to be able to view and edit my profile information, so that I can keep my profile accurate and up-to-date .
-### Acceptance Criteria
-Given the customer should be login successfully.
-When the customer adds profile image, edit some personal details, or change his password.
-Then the system should be update customer`s profile.
 
-## Settings
+### Acceptance Criteria
+**Given** the customer should be login successfully.
+**When** the customer adds profile image, edit some personal details, or change his password.
+**Then** the system should be update customer`s profile.
+
+
+## 8-Settings
+
 ### User Story
 As a customer, I want to access various settings, so that I can customize some features like;preferred language, andor onoff notifications .
+
 ### Acceptance Criteria
-Given the customer should be login successfully.
-When the customer change one or more features status.
-Then the system should be save new changes even the customer exits the applicate.
+**Given** the customer should be login successfully.
+**When** the customer change one or more features status.
+**Then** the system should be save new changes even the customer exits the applicate.
