@@ -1,0 +1,64 @@
+# API Tests
+
+|ID |     Module  |Method|         Test Cases                                                                                |                 Expected Result                             |
+|---|-------------|------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+|   |Register     |post  |register with valid data                                                                           |status code(200) User account created successfully           |
+|   |             |      |register with duplicate email                                                                      |status code(409)Conflict Resource already exists             |
+|   |             |      |register with invalid email format                                                                 |status code(405)                                             |
+|   |             |      |password strength enforcement                                                                      |status code(400) Bad Request Request data is invalid         |
+|   |             |      |missing required fields                                                                            |status code(400) Request data is invalid                     |
+|   |Login        |Post  |login with valid credentials                                                                       |status code:(200) OK Login successful, token/session returned|
+|   |             |      |login with worng password                                                                          |status code:(401) Unauthorized Authentication failed         |
+|   |             |      |login with unregistered email                                                                      |status code:(401) Unauthorized Authentication failed         |
+|   |             |      |login with missing credentials                                                                     |status code:(400) Bad Request Request missing required fields|
+|   |             |      |login by account locked                                                                            |status code:(403) Forbidden User not allowed to log in       |
+|   |             |      |login by account disabled                                                                          |status code:(403) Forbidden User not allowed to log in       |
+|   |             |      |login by account expired                                                                           |status code:(403) Forbidden User not allowed to log in       |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |Search       |get   |search by keywords                                                                                 |status code(200)OK                                           |
+|   |             |      |search by delete company                                                                           |status code(200)OK                                           |
+|   |             |      |search to reserved unit                                                                            |status code(200)OK                                           |
+|   |             |      |search to delete property                                                                          |status code(200)OK                                           |
+|   |             |      |search by filter                                                                                   |status code(200)OK                                           |
+|   |             |      |search by keywords and feature                                                                     |status code(200)OK                                           |
+|   |             |      |search by two or more filter options                                                               |status code(200)OK                                           |
+|   |properties   |get   |verify browsing all properties                                                                     |status code(200)OK                                           |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |verify to key details for all properties                                                           |status code(200)OK                                           |
+|   |             |      |verify all details and description for each property                                               |status code(200)OK                                           |
+|   |units        |get   |verify browsing all available unit                                                                 |status code(200)OK                                           |
+|   |             |      |verify that the reserved units is not available on list                                            |status code(200)OK                                           |
+|   |             |      |verify to key details for all units                                                                |status code(200)OK                                           |
+|   |             |      |verify all details and description for each units                                                  |status code(200)OK                                           |
+|   |             |post  |booking unit with enough points                                                                    |status code(200)OK                                           |
+|   |             |      |booking unit without enough points                                                                 |status code:(403) Forbidden                                  |
+|   |propperties  |get   |check units reservations list with key details                                                     |status code(200)OK                                           |
+|   |   wallet    |      |check installment plan for each unit                                                               |status code(200)OK                                           |
+|   |             |      |check installment paid                                                                             |status code(200)OK                                           |
+|   |             |      |check paid and remaining                                                                           |status code(200)OK                                           |
+|   |             |      |verify units that paid all installment                                                             |status code(200)OK                                           |
+|   |             |      |                                                                                                   |                                                             |
+|   |points wallet|get   |Check the point balance decrease by the required number in the unit                                |status code(200)OK                                           | 
+|   |             |      |Check customer`s points balance increase by 10% when paying the down payment                       |status code(200)OK                                           |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |             |      |                                                                                                   |                                                             |
+|   |Profile      |get   |check all user data is a vailable in his profile                                                   |status code(200)OK                                           |
+|   |             |put   |verify that the user able to edit his info                                                         |status code(200)OK                                           |
+|   |             |      |verify that the system does not accept number in text field                                        |status code(200)OK                                           |
+|   |             |      |verify that the system does not accept empty fields                                                |status code(200)OK                                           |
+|   |             |      |verify that the user able to change password                                                       |status code(200)OK                                           |
+|   |             |      |verify that the system does not save updated data if user does not save it                         |status code(200)OK                                           |
+|   |             |      |verify that the customer able to log out from application                                          |status code(200)OK                                           |
+|   |             |post  |verify that the customer able to upload image profile                                              |status code(201)created                                      |
+|   |settings     |put   |check that the system able to switch between ar/en language                                        |status code(200)OK                                           |
+|   |             |      |check that the system able to switch between on/off notifications                                  |status code(200)OK                                           |
+|   |notifications|get   |Verify that incoming notifications reach the user on time.                                         |status code(200)OK                                           |
+|   |             |      |Verify that the system saves all notifications, as well as the time each notification was received.|status code(200)OK                                           |
+|---|-------------|------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
